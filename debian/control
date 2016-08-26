@@ -1,0 +1,29 @@
+Source: zmap
+Section: net
+Priority: optional
+Maintainer: Rapid7 Labs <r7_labs@rapid7.com>
+Build-Depends: byacc,
+               cmake (>= 2.8.12),
+               debhelper (>= 9),
+               flex,
+               gengetopt,
+               libgmp-dev,
+               libpcap-dev,
+               pkg-config,
+Standards-Version: 3.9.6
+Homepage: https://github.com/rapid7/zmap
+
+Package: zmap
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: network scanner for researchers
+ ZMap is a network scanner that enables researchers to
+ easily perform Internet-wide network studies. With a single
+ machine and a well provisioned network uplink, ZMap is capable of
+ performing a complete scan of the IPv4 address space in under 45
+ minutes, approaching the theoretical limit of gigabit Ethernet.
+ .
+ ZMap can be used to study protocol adoption over time, monitor
+ service availability, and help people better understand large systems
+ distributed across the Internet.
